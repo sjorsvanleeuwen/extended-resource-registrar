@@ -1,0 +1,30 @@
+{
+    "name": "sjorsvanleeuwen/laravel-extended-resource-registrar",
+    "description": "Extension for Laravel Router and ResourceRegistrar to handle softDeletes and simple delete without HTTP DELETE method",
+    "keywords": ["laravel", "router", "resource", "extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sjors van Leeuwen",
+            "email": "sjorsvanleeuwen@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sjorsvanleeuwen\\ExtendedResourceRegistrar\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Sjorsvanleeuwen\\ExtendedResourceRegistrar\\ServiceProvider"
+            ]
+        }
+    }
+}
