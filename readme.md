@@ -1,5 +1,9 @@
 ## Laravel Extended Resource Registrar
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Total Downloads][ico-downloads]][link-downloads]
+
 This is a package to extend the resource registrar with Laravel 5.
 It includes a ServiceProvider to register the new router.
 
@@ -59,3 +63,11 @@ You can now create a resourceful route with softDeletes
 ```php
 Route::resource('foo', 'FooController')->withSoftDeletes();
 ```
+[ico-version]: https://img.shields.io/packagist/v/sjorsvanleeuwen/laravel-extended-resource-registrar.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/sjorsvanleeuwen/laravel-extended-resource-registrar.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/sjorsvanleeuwen/laravel-extended-resource-registrar
+[link-downloads]: https://packagist.org/packages/sjorsvanleeuwen/laravel-extended-resource-registrar
+[link-author]: https://github.com/sjorsvanleeuwen
+[link-contributors]: ../../contributors
