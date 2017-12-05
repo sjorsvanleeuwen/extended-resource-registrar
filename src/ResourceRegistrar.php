@@ -93,7 +93,7 @@ class ResourceRegistrar extends \Illuminate\Routing\ResourceRegistrar
             return $this->router->delete($uri, $action);
         }
 
-        $uri = $this->getResourceUri($name).'/{'.$base.'}'.static::$verbs['destroy'];
+        $uri = $this->getResourceUri($name).'/{'.$base.'}/'.static::$verbs['destroy'];
 
         return $this->router->get($uri, $action);
     }
@@ -109,7 +109,7 @@ class ResourceRegistrar extends \Illuminate\Routing\ResourceRegistrar
      */
     protected function addResourceRestore($name, $base, $controller, $options)
     {
-        $uri = $this->getResourceUri($name).'/{'.$base.'}'.static::$verbs['restore'];
+        $uri = $this->getResourceUri($name).'/{'.$base.'}/'.static::$verbs['restore'];
 
         $action = $this->getResourceAction($name, $controller, 'restore', $options);
 
