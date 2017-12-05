@@ -90,12 +90,12 @@ class ResourceRegistrar extends \Illuminate\Routing\ResourceRegistrar
 
         if($this->router->getApiUsage())
         {
-            $uri = $this->getResourceUri($name).'/{'.$base.'}'.static::$verbs['destroy'];
-
-            return $this->router->get($uri, $action);
+            return $this->router->delete($uri, $action);
         }
 
-        return $this->router->delete($uri, $action);
+        $uri = $this->getResourceUri($name).'/{'.$base.'}'.static::$verbs['destroy'];
+
+        return $this->router->get($uri, $action);
     }
 
     /**
@@ -115,9 +115,9 @@ class ResourceRegistrar extends \Illuminate\Routing\ResourceRegistrar
 
         if($this->router->getApiUsage())
         {
-            return $this->router->get($uri, $action);
+            return $this->router->put($uri, $action);
         }
 
-        return $this->router->put($uri, $action);
+        return $this->router->get($uri, $action);
     }
 }
